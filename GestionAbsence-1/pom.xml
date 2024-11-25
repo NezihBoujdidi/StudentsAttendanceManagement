@@ -14,7 +14,7 @@
 	<name>GestionAbsence-1</name>
 	<description>Projet gestion d&apos;absence</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
