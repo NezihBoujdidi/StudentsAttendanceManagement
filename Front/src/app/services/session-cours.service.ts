@@ -8,7 +8,7 @@ import { SessionCours } from '../models/SessionCours';
 })
 export class SessionCoursService {
 
-  private apiUrl = 'http://localhost:8081/sessionCours';
+  private apiUrl = 'http://localhost:8080/sessionCours';
 
   constructor(private http: HttpClient) { }
 

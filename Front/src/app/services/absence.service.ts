@@ -8,7 +8,7 @@ import { Absence } from '../models/Absence';
 })
 export class AbsenceService {
 
-  private apiUrl = 'http://localhost:8081/absences';
+  private apiUrl = 'http://localhost:8080/absences';
 
   constructor(private http: HttpClient) { }
 

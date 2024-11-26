@@ -9,7 +9,7 @@ import { Cours } from '../models/Cours';
 })
 export class ProfesseurService {
 
-  private apiUrl = 'http://localhost:8081/professeurs';
+  private apiUrl = 'http://localhost:8080/professeurs';
   SelectedProf: Professeur | undefined;
   private readonly storageKey = 'profAcc';
   selectedProfesseur: Professeur | undefined;

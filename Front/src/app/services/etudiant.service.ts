@@ -8,7 +8,7 @@ import { Etudiant } from '../models/Etudiant';
 })
 export class EtudiantService {
 
-  private apiUrl = 'http://localhost:8081/etudiants';
+  private apiUrl = 'http://localhost:8080/etudiants';
   selectedEtudiant: Etudiant | null = null;
 
   constructor(private http: HttpClient) { }

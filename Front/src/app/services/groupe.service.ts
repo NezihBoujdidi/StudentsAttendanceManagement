@@ -9,7 +9,7 @@ import { Etudiant } from '../models/Etudiant';
 })
 export class GroupeService {
 
-  private apiUrl = 'http://localhost:8081/groupes';
+  private apiUrl = 'http://localhost:8080/groupes';
   selectedGroupe: Groupe = new Groupe('', [], []);
 
   constructor(private http: HttpClient) { }

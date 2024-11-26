@@ -11,7 +11,7 @@ import { isPlatformBrowser } from '@angular/common';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:8081';
+  private apiUrl = 'http://localhost:8080';
   private currentUserSubject: BehaviorSubject<LoginRequest | null>;
   public currentUser: Observable<LoginRequest | null>;
   private isBrowser: boolean; // Flag to check if the platform is a browser
