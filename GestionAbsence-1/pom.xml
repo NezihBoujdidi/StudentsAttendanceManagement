@@ -23,6 +23,7 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 <!-- https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
+<!-- https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
 <dependency>
     <groupId>jakarta.persistence</groupId>
     <artifactId>jakarta.persistence-api</artifactId>
