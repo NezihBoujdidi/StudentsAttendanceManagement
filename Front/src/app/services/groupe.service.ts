@@ -3,13 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Groupe } from '../models/Groupe';
 import { Etudiant } from '../models/Etudiant';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GroupeService {
 
-  private apiUrl = 'http://localhost:8080/groupes';
+  private apiUrl = `${environment.apiUrl}/groupes`;
   selectedGroupe: Groupe = new Groupe('', [], []);
 
   constructor(private http: HttpClient) { }

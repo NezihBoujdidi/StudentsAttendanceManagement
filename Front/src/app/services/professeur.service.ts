@@ -3,13 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Professeur } from '../models/Professeur';
 import { Cours } from '../models/Cours';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfesseurService {
 
-  private apiUrl = 'http://localhost:8080/professeurs';
+  private apiUrl = `${environment.apiUrl}/professeurs`;
   SelectedProf: Professeur | undefined;
   private readonly storageKey = 'profAcc';
   selectedProfesseur: Professeur | undefined;

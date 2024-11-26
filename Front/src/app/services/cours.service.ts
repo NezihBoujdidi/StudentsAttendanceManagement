@@ -4,13 +4,14 @@ import { Observable } from 'rxjs';
 import { Cours } from '../models/Cours';
 import { SessionCours } from '../models/SessionCours';
 import { Professeur } from '../models/Professeur';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoursService {
 
-  private apiUrl = 'http://localhost:8080/cours';
+  private apiUrl = `${environment.apiUrl}/cours`;
 
   constructor(private http: HttpClient) { }
 

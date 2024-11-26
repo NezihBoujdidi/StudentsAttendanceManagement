@@ -6,12 +6,13 @@ import { catchError, map } from 'rxjs/operators';
 import { User } from '../../models/User';
 import { LoginRequest } from '../../models/LoginRequest';
 import { isPlatformBrowser } from '@angular/common';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:8080';
+  private apiUrl = `${environment.apiUrl}`;
   private currentUserSubject: BehaviorSubject<LoginRequest | null>;
   public currentUser: Observable<LoginRequest | null>;
   private isBrowser: boolean; // Flag to check if the platform is a browser
